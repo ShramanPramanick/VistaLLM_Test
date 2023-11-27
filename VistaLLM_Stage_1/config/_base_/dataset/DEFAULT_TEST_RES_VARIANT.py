@@ -1,0 +1,41 @@
+RES_TEST_COMMON_CFG = dict(
+    type='RESDataset',
+    template_file=r'RES_ChatGPT.json',
+    image_folder=r'train2014',
+    max_dynamic_size=None,
+)
+
+DEFAULT_TEST_RES_VARIANT = dict(
+    RES_REFCOCO_UNC_TESTA=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco_unc_testA_contour.jsonl',
+    ),
+    RES_REFCOCO_UNC_TESTB=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco_unc_testB_contour.jsonl',
+    ),
+    RES_REFCOCO_UNC_VAL=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco_unc_val_contour.jsonl',
+    ),
+    RES_REFCOCOA_UNC_TESTA=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco+_unc_testA_contour.jsonl',
+    ),
+    RES_REFCOCOA_UNC_TESTB=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco+_unc_testB_contour.jsonl',
+    ),
+    RES_REFCOCOA_UNC_VAL=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcoco+_unc_val_contour.jsonl',
+    ),
+    RES_REFCOCOG_UMD_TEST=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcocog_umd_test_contour.jsonl',
+    ),
+    RES_REFCOCOG_UMD_VAL=dict(
+        **RES_TEST_COMMON_CFG,
+        filename=r'RES_refcocog_umd_val_contour.jsonl',
+    ),  
+)
